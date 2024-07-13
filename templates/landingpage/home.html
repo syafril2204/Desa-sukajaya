@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desa Sukojaya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/normalize.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/Logos.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/landingpage.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="adminActions">
+      <input type="checkbox" name="adminToggle" class="adminToggle" />
+      <a class="adminButton" href="/chatbot"
+        ><i class="fa-brands fa-rocketchat"></i
+      ></a>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #327a6d"
+    >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="{{ url_for('static', filename='images/Logos.png') }}"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 px-5 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-6" href="/home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" aria-current="page" href="/profile-desa"
+                >Profil Desa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="/peta-wilayah">Peta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="/tentang-chatbot"
+                >Tentang CabotDes</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+          <a
+            class="nav-link fs-6 text-light border rounded-circle px-3 bg-success border-success"
+            href="#"
+            ><i class="fa-brands fa-rocketchat"></i
+          ></a>
+        </li> -->
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <div
+      id="carouselExampleInterval"
+      style="margin-top: 90px"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item drk active" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle2.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Transformasi</span> Digital Desa
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Perluas Jangakaun, Lakukan Percepatan Layanan Dengan Smart System
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item drk" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle3.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Terhubung, Terpenuhi, </span
+              >Terinformasi!
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Menyediakan koneksi langsung dengan desa melalui chatbot untuk
+              memenuhi kebutuhan informasi masyarakat
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item drk" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle 13.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Wawasan Digital,</span> Layanan Tanpa
+              Batas!
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Membawa informasi desa ke era digital dengan bantuan chatbot untuk
+              layanan tanpa hambatan
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item drk" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle 8.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Navigasi Cepat,</span> Informasi Prima!
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Menghadirkan navigasi cepat dan informasi terkini dengan chatbot
+              berbasis digital
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item drk" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle 9.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Portal Digital Desa -</span> Cepat,
+              Mudah, Akurat
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Sebuah portal digital desa dengan chatbot untuk kemudahan dan
+              ketepatan informasi
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item drk" data-bs-interval="3000">
+          <img
+            src="{{ url_for('static', filename='images/Rectangle 15.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"
+          >
+            <h2 class="fw-bold fs-1 bg-opacity-50 px-2">
+              <span class="hero-color">Desa Terhubung</span> Masyarakat
+              Terlayani
+            </h2>
+            <p class="bg-opacity-50 px-1">
+              Menghadirkan konsep Desa 4.0 dengan layanan chatbot untuk
+              keterhubungan dan pelayanan optimal
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button> -->
+      <!-- <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="text-center">
+        <h2 class="primary-color fw-bold">Berita Terbaru</h2>
+        <p class="primary-color fw-semibold mt-3">
+          Berita di halaman ini memberikan gambaran singkat tentang apa yang
+          terjadi di Desa, termasuk proyek <br />
+          pembangunan, kegiatan masyarakat, keputusan pemerintah desa, atau
+          peristiwa penting lainnya.
+        </p>
+      </div>
+
+      <div class="slide-container swiper mb-5">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/slider1.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title primary-color fw-bold mb-3">
+                    Pemdes Sukajaya berbenah dengan Gerakan pembangunan desa
+                  </h5>
+                  <p class="card-text">
+                    Pemerintah Desa Sukajaya di Kabupaten Kuningan telah
+                    meluncurkan sebuah inisiatif yang menjanjikan untuk
+                    memperbaiki infrastruktur dan meningkatkan kesejahteraan
+                    masyarakatnya. Melalui Gerakan Pembangunan Desa, Pemdes
+                    Sukajaya berkomitmen...
+                  </p>
+
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/pemdes-sukajaya-berbenah-dengan-gerakan"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/slider2.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="row">
+                    <h5 class="card-title primary-color fw-bold mb-3 fs-6">
+                      Kegiatan Kader PKK Desa Sukajaya Membagikan Masker Secara
+                      Gratis ke Masyarakat
+                    </h5>
+                  </div>
+                  <div class="row">
+                    <p class="card-text">
+                      Menyikapi kembali meningkatnya kasus COVID-19 dan ancaman
+                      varian baru, kegiatan ini tidak hanya menjadi bentuk
+                      kepedulian sosial, tetapi juga tindakan preventif yang
+                      sangat penting. Dengan penuh semangat, para kader PKK
+                      bergerak membagikan dari rumah ke rumah...
+                    </p>
+                  </div>
+
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/kegiatan-kader-pkk-desa-sukajaya"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/slider3.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title primary-color fw-bold mb-3 fs-6">
+                    Penyampakian Visi Misi Ketua Bumdes Desa Sukajaya Periode
+                    2020-2025
+                  </h5>
+                  <p class="card-text">
+                    Dalam sebuah pertemuan penting di Balai Desa Sukajaya, Ketua
+                    Badan Usaha Milik Desa (Bumdes) mengumumkan visi misi baru
+                    yang menggugah semangat untuk mewujudkan kemajuan yang
+                    berkelanjutan bagi masyarakat. Dengan tekad yang kuat, Ketua
+                    Bumdes berkomitmen untuk ...
+                  </p>
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/penyampaian-visi-dan-misi-ketua-bumdes"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/news.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title primary-color fw-bold mb-3 fs-6">
+                    Bencana Hujan Angin yang Menimpa Salah Satu Rumah Warga
+                  </h5>
+                  <p class="card-text">
+                    Desa Sukajaya diguncang oleh kejadian tak terduga saat
+                    bencana hujan angin melanda salah satu rumah warga. Kejadian
+                    ini menyoroti pentingnya kewaspadaan dan persiapan dalam
+                    menghadapi ...
+                  </p>
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/bencana-hujan-angin-yang-menimpa"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/news2.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title primary-color fw-bold mb-3 fs-6">
+                    Pembentukan Karang Taruna Desa Sukajaya
+                  </h5>
+                  <p class="card-text">
+                    Desa Sukajaya mengalami tonggak sejarah baru dengan
+                    pembentukan Karang Taruna, sebuah organisasi pemuda yang
+                    bertujuan untuk menggerakkan potensi generasi muda dalam
+                    memajukan desa ...
+                  </p>
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/pembentukan-karang-taruna"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card sled">
+                <img
+                  src="{{ url_for('static', filename='images/news3.png') }}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title primary-color fw-bold mb-3 fs-6">
+                    Penetapan Pengurus Keanggotaan RT dan RW Desa Sukajaya
+                  </h5>
+                  <p class="card-text">
+                    Desa Sukajaya menyongsong masa depannya dengan langkah yang
+                    mantap melalui penetapan pengurus keanggotaan RT dan RW
+                    untuk periode 2022-2027. Pengumuman ini ...
+                  </p>
+                  <a
+                    class="position-absolute bottom-0 end-0 p-3 primary-color fs-6"
+                    style="text-decoration: none"
+                    href="/penetapan-pengurus-keanggotaan-rt-rw"
+                    >selengkapnya...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn"
+          style="color: #327a6d; padding-left: 25px"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn"
+          style="color: #327a6d; padding-right: 25px"
+        ></div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2 py-5" style="background-color: #eaf8ef">
+      <div class="text-center py-3 mb-5">
+        <h2 class="primary-color fw-bold mb-4">Program Unggulan</h2>
+        <p class="primary-color fw-semibold">
+          Program unggulan desa adalah inisiatif atau kegiatan yang dianggap
+          istimewa atau memiliki <br />
+          dampak yang signifikan bagi kemajuan dan kesejahteraan masyarakat
+          desa.
+        </p>
+      </div>
+
+      <div class="container-fluid mb-5">
+        <div class="row d-flex justify-content-center g-4">
+          <div
+            class="card unggul-card col-lg-6 h-50 text-center"
+            style="margin-right: 100px"
+          >
+            <img
+              src="{{ url_for('static', filename='images/icon1.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+
+            <div class="card-body">
+              <p class="card-text fs-6 card-unggul text-center fw-semibold">
+                Program Pertanian <br />
+                Berkelanjutan
+              </p>
+            </div>
+          </div>
+          <div class="card unggul-card col-lg-6 h-50 text-center">
+            <img
+              src="{{ url_for('static', filename='images/icon2.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+            <div class="card-body">
+              <p class="card-text card-unggul fw-semibold fs-6">
+                Kesehatan Masyarakat
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center g-4 mt-5">
+          <div
+            class="card unggul-card col-lg-6 h-50 text-center"
+            style="margin-right: 100px"
+          >
+            <img
+              src="{{ url_for('static', filename='images/icon3.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+
+            <div class="card-body">
+              <p class="card-text card-unggul text-center fw-semibold fs-6">
+                Pemberdayaan <br />Ekonomi Masyarakat
+              </p>
+            </div>
+          </div>
+          <div class="card unggul-card col-lg-6 h-50 text-center">
+            <img
+              src="{{ url_for('static', filename='images/icon4.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+            <div class="card-body">
+              <p class="card-text card-unggul fw-semibold fs-6">
+                Infrastruktur dan <br />
+                Lingkungan
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center g-4 mt-5">
+          <div
+            class="card unggul-card col-lg-6 h-50 text-center"
+            style="margin-right: 100px"
+          >
+            <img
+              src="{{ url_for('static', filename='images/icon5.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+
+            <div class="card-body">
+              <p class="card-text card-unggul text-center fw-semibold fs-6">
+                Pendidikan Berkualitas
+              </p>
+            </div>
+          </div>
+          <div class="card unggul-card col-lg-6 h-50 text-center">
+            <img
+              src="{{ url_for('static', filename='images/icon6.png') }}"
+              class="card-img-top mx-auto"
+              alt="..."
+              style="width: 100px; margin-top: 10"
+            />
+            <div class="card-body">
+              <p class="card-text card-unggul fw-semibold fs-6">
+                Pemberdayaan <br />
+                Perempuan dan Anak
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="text-center mt-5">
+        <h2 class="primary-color fw-semibold mb-3">Pelayanan Publik</h2>
+        <p class="primary-color fw-semibold mb-3">
+          Bentuk layanan yang diberikan oleh kantor Desa Sukajaya adalah jenis
+          layanan publik yang diberikan <br />
+          oleh kantor desa untuk membantu keperluan msyarakat
+        </p>
+      </div>
+
+      <div class="slide-container swiper mb-5">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <!-- <div class="swiper-slide">
+              <div
+                class="card sled d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; height: 450px; width: 300px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bold"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pembuatan E-kTP</a
+                    >
+                  </div>
+
+                  <div class="row mt-5 mb-5 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <img
+                        src="{{ url_for('static', filename='images/ic1.png') }}"
+                        class="card-img-top"
+                        alt="..."
+                        style="width: 100px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div
+                      class="btn text-light"
+                      style="background-color: #327a6d; border-radius: 20px"
+                    >
+                      Lihat Selengkapnya
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="pengurusan-surat-keterangan-catatan-kepolisian"
+                      >Pengurusan Surat Keterangan Catatan Kepolisian (SKCK)</a
+                    >
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >tv_signin</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="pengurusan-surat-keterangan-catatan-kepolisian"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="pengurusan-surat-keterangan-tidak-mampu"
+                      >Pengurusan Surat Keterangan Tidak Mampu (SKTM)
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >two_pager</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="pengurusan-surat-keterangan-tidak-mampu"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="/pengurusan-surat-keterangan-kehilangan"
+                      >Pengurusan surat keterangan kehilangan
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >security</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/pengurusan-surat-keterangan-kehilangan"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Surat keterangan melahirkan
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >switch_account</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/pengurusan-surat-keterangan-melahirkan"
+                      >
+                        Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan surat keterangan Kematian
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >position_bottom_left</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/pengurusan-surat-keterangan-kematian"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >surat pengantar pernikahan
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >menu_book</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                        margin-top: 25px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/surat-pengantar-pernikahan"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Penduduk / Domisili / Usaha
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >task</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/pengurusan-penduduk-domisili-usaha"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Keterangan Ijin Usaha
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >text_snippet</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pengurusan-Keterangan-Ijin-Usaha"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Surat keterangan pindah
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >oven</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pengurusan-Surat-keterangan-pindah"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Surat keterangan bepergian
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >subtitles</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pengurusan-Surat-keterangan-bepergian"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pengurusan Kredit Usaha Rakyat (KUR)
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >topic</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pengurusan-Kredit-Usaha-Rakyat"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >surat keterangan permohonan penurunan atau penaikan daya
+                      listrik
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >recent_patient</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/surat-keterangan-permohonan-penurunan-atau-penaikan-daya-listrik"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >permohonan perubahan nama
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >newsmode</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/permohonan-perubahan-nama"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pembuatan Akta Kelahiran anak
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >familiar_face_and_zone</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pembuatan-Akta-Kelahiran-anak"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pembuatan Kartu Keluarga (KK)
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >family_restroom</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pembuatan-Kartu-Keluarga"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card sled1 d-flex justify-content-center align-items-center"
+                style="background-color: #eaf8ef; width: 300px; height: 450px"
+              >
+                <div class="card-body text-center">
+                  <div class="row mb-5">
+                    <a
+                      class="d-flex align-items-center flex-column text-dark fw-bolder mt-2"
+                      style="text-decoration: none"
+                      href="#"
+                      >Pembuatan Surat Pengantar BPJS Kesehatan
+                    </a>
+                  </div>
+
+                  <div class="row mt-5 mb-2 py-5 d-flex justify-content-center">
+                    <div
+                      class="d-flex justify-content-center align-items-center bg-white rounded-circle"
+                      style="width: 150px; height: 150px"
+                    >
+                      <span
+                        class="material-symbols-outlined primary-color py-5 px-3 d-inline align-middle"
+                        >ecg_heart</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 d-flex justify-content-center">
+                    <div
+                      class="btn text-light"
+                      style="
+                        background-color: #327a6d;
+                        border-radius: 20px;
+                        width: 250px;
+                      "
+                    >
+                      <a
+                        class="text-light"
+                        style="text-decoration: none"
+                        href="/Pembuatan-Surat-Pengantar-BPJS-Kesehatan"
+                        >Lihat Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn"
+          style="
+            color: #327a6d;
+
+            font-weight: bolder;
+            height: 10px;
+          "
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn"
+          style="
+            color: #327a6d;
+            padding-right: 25px;
+            font-weight: bolder;
+            height: 10px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5" style="background-color: #eaf8ef">
+      <div class="text-center">
+        <h2 class="primary-color fw-semibold">Galeri Foto dan Video</h2>
+        <p class="primary-color fw-semibold">
+          Galeri Foto dan Video Desa Sukajaya adalah jendela visual yang
+          mengungkapkan peristiwa dan kegiatan <br />
+          yang terjadi di Desa Sukajaya
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <img
+                src="{{ url_for('static', filename='images/gal1.png') }}"
+                style="width: 300px"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <img
+                src="{{ url_for('static', filename='images/gal2.png') }}"
+                style="width: 300px"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <img
+                src="{{ url_for('static', filename='images/gal3.png') }}"
+                style="width: 300px"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <img
+                src="{{ url_for('static', filename='images/gal4.png') }}"
+                style="width: 300px"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <div style="border-radius: 15px; overflow: hidden; width: 270px">
+                <iframe
+                  width="300"
+                  height="250"
+                  src="https://www.youtube.com/embed/2jsfhW0w4s8?si=SaFK6cfvpyP0axNA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <div style="border-radius: 15px; overflow: hidden; width: 270px">
+                <iframe
+                  width="300"
+                  height="250"
+                  src="https://www.youtube.com/embed/2jsfhW0w4s8?si=SaFK6cfvpyP0axNA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <div style="border-radius: 15px; overflow: hidden; width: 270px">
+                <iframe
+                  width="300"
+                  height="250"
+                  src="https://www.youtube.com/embed/2jsfhW0w4s8?si=SaFK6cfvpyP0axNA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card col-lg-3"
+            style="border: #eaf8ef; background-color: transparent"
+          >
+            <div class="card-body">
+              <div style="border-radius: 15px; overflow: hidden; width: 270px">
+                <iframe
+                  width="300"
+                  height="250"
+                  src="https://www.youtube.com/embed/2jsfhW0w4s8?si=SaFK6cfvpyP0axNA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-end">
+          <a
+            class="btn text-light"
+            style="
+              background-color: #327a6d;
+              border-radius: 20px;
+              text-decoration: none;
+              width: 200px;
+            "
+            href="/galeri-dan-foto"
+            >Selengkapnya</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div style="background-color: #3c3c3c" class="container-fluid">
+        <div class="row">
+          <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle">
+              <img
+                src="{{ url_for('static', filename='images/LOGO DESA SUKAJAYA 2.png') }}"
+                alt=""
+                style="
+                  width: 80px;
+                  background-color: #fff;
+                  border-radius: 50px;
+                  padding: 10px;
+                  box-shadow: 10px 7px 15px 0 rgba(57, 56, 56, 0.1),
+                    0 1px 1px 0 rgba(0, 0, 0, 0.1);
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-5 mt-3">
+          <h1 class="text-light text-uppercase fs-4 fw-bold">
+            pemerintahan desa sukajaya
+          </h1>
+          <p class="text-light mt-4">
+            Jalan Desa Sukajaya, Dusun 1 RT 001 RW 001 <br />
+            Desa Sukajaya, Kecamatan Cimahi, Kabupaten Kuningan, <br />
+            Provinsi Jawa Barat, Indonesia, 45582.
+          </p>
+          <div class="row g-1 d-inline">
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-envelope"> </i> suakaja743@gmail.com</a
+            >
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-phone"> </i> 082297980002</a
+            >
+          </div>
+          <div class="py-2" style="border-bottom: dotted #fff"></div>
+        </div>
+      </div>
+
+      <div
+        style="background-color: #1e1e1e; padding: 20px"
+        class="container-fluid text-center"
+      >
+        <p style="color: #5b5b5b">
+          <span style="color: #f8a23d">Permerintah Desa Sukajaya.</span> All
+          Rights Reserved. Powered by
+          <span style="color: #f8a23d">No Name</span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

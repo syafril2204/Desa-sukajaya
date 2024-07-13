@@ -1,0 +1,270 @@
+{
+  "intents": [
+    {
+      "tag": "Sapaan",
+      "patterns": [
+        "Halo",
+        "Hai",
+        "hallo",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan"
+      ],
+      "responses": [
+        "Halo diabetescare disini! Saya adalah chatbot yang siap membantu Anda dengan pertanyaan seputar diabetes. Silakan tanyakan apa yang ingin Anda ketahui."
+      ]
+    },
+    {
+      "tag": "Pengertian Diabetes",
+      "patterns": [
+        "Apa itu diabetes?",
+        "Bagaimana diabetes terjadi?",
+        "Diabetes itu apa sih?",
+        "Diabetes",
+        "Pengertian diabetes"
+      ],
+      "responses": [
+        "Diabetes adalah penyakit yang ditandai dengan kadar gula darah yang tinggi dalam tubuh. Ini terjadi ketika tubuh tidak dapat memproduksi atau menggunakan hormon insulin dengan efektif. Insulin diperlukan untuk mengontrol gula darah. Apakah Anda ingin tahu lebih banyak tentang jenis diabetes tertentu?"
+      ]
+    },
+
+    {
+      "tag": "Penyebab Diabetes",
+      "patterns": ["penyebab diabetes?", "apa penyebab diabetes?"],
+      "responses": [
+        "kadar gula darah normal yaitu kurang dari 100 mg/dL. Apabila kadar gula darah sudah mencapai 100-125 mg/dL berarti masuk status prediabetes."
+      ]
+    },
+    {
+      "tag": "Jenis Diabetes",
+      "patterns": [
+        "Apa saja jenis diabetes?",
+        "Ada berapa jenis diabetes?",
+        "Jenis diabetes"
+      ],
+      "responses": [
+        "Ada tiga jenis diabetes utama: diabetes tipe 1, diabetes tipe 2, dan diabetes gestasional. Diabetes tipe 1 terjadi ketika tubuh tidak dapat memproduksi insulin. Diabetes tipe 2 terjadi ketika tubuh tidak menggunakan insulin dengan efektif. Diabetes gestasional terjadi pada wanita hamil. Apakah Anda ingin tahu lebih lanjut tentang salah satu jenis diabetes ini?"
+      ]
+    },
+    {
+      "tag": "Diabetes Tipe 1",
+      "patterns": [
+        "Bagaimana diabetes tipe 1?",
+        "Apa itu diabetes tipe 1?",
+        "diabetes tipe 1",
+        "Diabetes tipe 1 itu apa sih?"
+      ],
+      "responses": [
+        "Pada diabetes tipe 1 ini, tubuh benar-benar berhenti memproduksi insulin karena perusakan sel pankreas yang memproduksi insulin oleh sistem kekebalan tubuh. Hal ini sebelumnya disebut diabetes juvenile karena terkontrol, diabetes dapat menyebabkan masalah serius, seperti penyakit jantung, stroke, kebutaan, gagal ginjal, antara lain. Beberapa di antaranya mungkin mengancam nyawa."
+      ]
+    },
+    {
+      "tag": "Diabetes Tipe 2",
+      "patterns": [
+        "Bagaimana diabetes tipe 2?",
+        "Apa itu diabetes tipe 2?",
+        "Diabetes tipe 2",
+        "Diabetes tipe 2 itu apa sih?"
+      ],
+      "responses": [
+        "Ini adalah bentuk yang lebih umum dari diabetes, terhitung sekitar 90% dari kasus. Pada diabetes tipe 2, pankreas menghasilkan jumlah yang tidak memadai insulin, atau tubuh tidak mampu menggunakan insulin yang tersedia dengan benar. Diabetes tipe 2 biasanya terjadi pada orang dewasa, dan lebih sering terjadi pada orang yang kelebihan berat badan atau obesitas. Diabetes tipe 2 sebelumnya dikenal dengan diabetes onset dewasa atau diabetes tidak Ditatalaksana sebagian besar dengan diet, olahraga dan obat oral. Insulin diberikan hanya jika kadar gula darah tidak dapat dikontrol oleh obat oral. Lebih dari 80% dari diabetes tipe 2 dapat dicegah atau ditunda dengan mengurangi faktor risiko yang dapat menyebabkan terjadinya diabetes dan mengadopsi gaya hidup sehat."
+      ]
+    },
+    {
+      "tag": "Orang Diabetes Tipe 2",
+      "patterns": [
+        "Siapa yang berisiko terkena diabetes tipe 2?",
+        "Siapa yang bisa terkena diabetes tipe 2?",
+        "Orang Diabetes tipe 2",
+        "Diabetes tipe 2 terjadi pada siapa?"
+      ],
+      "responses": [
+        "Belum diketahui mengapa beberapa orang bisa menjadi diabetes tipe 2 dan yang lainnya tidak. Namun, faktor- faktor tertentu meningkatkan risiko, beberapa di antaranya adalah riwayat keluarga, usia, ras, obesitas, diet tidak sehat, memiliki tekanan darah tinggi dan aktivitas fisik yang tidak memadai."
+      ]
+    },
+    {
+      "tag": "Obesitas",
+      "patterns": [
+        "Mengapa kelebihan berat badan beresiko diabetes?",
+        "Kenapa kelebihan berat badan beresiko diabetes?",
+        "Mengapa obesitas beresiko diabetes?",
+        "Kenapa obesitas beresiko diabetes?"
+      ],
+      "responses": [
+        "Berat badan mempengaruhi kesehatan dalam berbagai cara. Kelebihan berat badan dapat menjaga tubuh dari memproduksi dan memanfaatkan insulin dengan benar. Hal ini juga dapat menyebabkan tekanan darah tinggi. Orang yang kelebihan berat dua kali lebih mungkin untuk menjadi diabetes tipe 2 dibandingkan orang dengan berat badan normal. Menurunkan berat badan dan meningkatkan aktivitas fisik mengurangi risiko terjadinya diabetes tipe ini."
+      ]
+    },
+    {
+      "tag": "Pradiabetes",
+      "patterns": [
+        "Apa yang dimaksud dengan pradiabetes?",
+        "Apa itu Pradiabetes?",
+        "Pradiabetes",
+        "Seperti apa pradiabetes itu?"
+      ],
+      "responses": [
+        "Pradiabetes adalah suatu kondisi di mana kadar glukosa darah lebih tinggi dari normal tetapi tidak cukup tinggi untuk diagnosis diabetes. Jutaan orang di seluruh dunia tidak tahu bahwa mereka memiliki prediabetes. Itulah mengapa penting untuk diskrining saat pradiabetes. Jika HbA1C adalah antara 5,7% dan 6,4%, atau GDP lebih dari 110 mg / dL tapi kurang dari 126 mg / dL, atau TTGO (2 jam tes glukosa) adalah antara 140 dan 199 mg / dL, kondisi ini disebut sebagai pradiabetes. Orang pradiabetes dapat menjadi diabetes tipe 2 di kemudian hari. Ada aturan Sepertiga - sekitar sepertiga dari orang diabetes pra akan menjadi diabetes di lima tahun ke depan, sepertiga akan tetap pradiabetes, sementara sepertiga akan kembali ke normal. Mereka yang memiliki pradiabetes berada pada risiko yang lebih tinggi terkena penyakit kardiovaskular. Menerapkan program diet sehat dan olahraga yang tepat untuk mengendalikan berat badan dapat membantu mencegah perkembangan dari pradiabetes ke diabetes dan menghindari masalah kardiovaskular. Skrining untuk diabetes dan pradiabetes tidak seharusnya ditunda, ini lebih baik dilakukan sejak dini daripada terlambat."
+      ]
+    },
+    {
+      "tag": "Diabetes Gestasional",
+      "patterns": [
+        "Apa saja diabetes gestasional?",
+        "Apa itu diabetes gestasional?",
+        "Diabetes Gestasional"
+      ],
+      "responses": [
+        "Diabetes gestational adalah jenis diabetes sementara yang berkembang selama kehamilan (kehamilan). Seorang perempuan yang memiliki diabetes gestational dalam satu kehamilan memiliki risiko lebih tinggi terkena diabetes gestasional pada kehamilan masa depan. Meskipun diabetes gestational beralih ke normal setelah kehamilan, tetap meningkatkan risiko diabetes tipe 2 di masa depan. Oleh karena itu, skrining teratur dan tepat waktu untuk diabetes tipe 2 adalah penting bagi perempuan yang telah menderita diabetes gestasional."
+      ]
+    },
+    {
+      "tag": "Orang Diabetes Gestasional",
+      "patterns": [
+        "Siapa yang berisiko tinggi untuk terjadinya diabetes gestasional?",
+        "Siapa yang bisa terkena diabetes gestasional?"
+      ],
+      "responses": [
+        "Setiap perempuan dapat mengalami diabetes gestational, tetapi beberapa perempuan memiliki risiko lebih tinggi. Ada sejumlah faktor yang meningkatkan kemungkinan seorang perempuan mengalami diabetes gestasional. Faktor- faktor ini meliputi: usia lebih tua dari 25 tahun, kelebihan berat badan sebelum kehamilan, memiliki riwayat keluarga diabetes, riwayat kadar glukosa darah meningkat, episode aborsi berulang atau lahir mati, atau riwayat melahirkan bayi besar dan mengalami sindrom ovarium polikistik. Gaya hidup yang kurang mobilitas/gerak, hipertensi dan penyakit kardiovaskular lainnya juga meningkatkan risiko terjadinya diabetes gestational. Oleh karena itu, skrining semua ibu hamil untuk diabetes dianjurkan sebagai protokol standar."
+      ]
+    },
+    {
+      "tag": "Gejala Diabetes",
+      "patterns": [
+        "Apa saja gejala diabetes?",
+        "Apa gejala diabetes?",
+        "Bagaimana gejala diabetes terlihat?",
+        "Apa saja gejala diabetes tipe 1?",
+        "Bagaimana gejala diabetes tipe 1 terlihat?"
+      ],
+      "responses": [
+        "Gejala diabetes dapat meliputi sering merasa haus, sering buang air kecil, penurunan berat badan yang tidak dijelaskan, kelelahan, penglihatan kabur, dan kesemutan pada tangan atau kaki. Namun, gejala ini bisa berbeda antara satu individu dengan individu lainnya. Jika Anda mengalami gejala-gejala tersebut, disarankan untuk berkonsultasi dengan dokter."
+      ]
+    },
+    {
+      "tag": "Faktor Risiko",
+      "patterns": [
+        "Apa faktor risiko diabetes?",
+        "Apa yang meningkatkan risiko diabetes?"
+      ],
+      "responses": [
+        "Beberapa faktor risiko diabetes meliputi kelebihan berat badan atau obesitas, pola makan tidak sehat, gaya hidup tidak aktif, riwayat keluarga dengan diabetes, usia di atas 45 tahun, dan kondisi kesehatan tertentu seperti tekanan darah tinggi atau kadar kolesterol tinggi. Tetapi, siapa pun dapat mengembangkan diabetes, bahkan tanpa faktor risiko tertentu."
+      ]
+    },
+    {
+      "tag": "Pengelolaan Diabetes",
+      "patterns": [
+        "Bagaimana cara mengelola diabetes?",
+        "Apa yang harus dilakukan jika saya memiliki diabetes?"
+      ],
+      "responses": [
+        "Pengelolaan diabetes melibatkan mengadopsi pola makan sehat, olahraga teratur, memantau kadar gula darah, mengonsumsi obat atau insulin sesuai petunjuk dokter, menjaga berat badan ideal, dan mengelola stres. Sangat penting untuk berkonsultasi dengan tim perawatan medis Anda untuk mendapatkan rencana pengelolaan yang tepat untuk kondisi Anda."
+      ]
+    },
+    {
+      "tag": "Mengontrol Gula Darah",
+      "patterns": [
+        "Bagaimana cara mengontrol gula darah?",
+        "Apa yang dapat saya lakukan untuk mengatur gula darah saya?"
+      ],
+      "responses": [
+        "Anda dapat mengontrol gula darah dengan mengikuti rencana makan yang sehat dan seimbang, menghindari makanan tinggi gula dan karbohidrat sederhana, melakukan olahraga secara teratur, mengonsumsi obat atau insulin sesuai petunjuk dokter, dan memantau kadar gula darah secara teratur. Penting untuk berdiskusi dengan dokter atau ahli gizi untuk mendapatkan rekomendasi yang spesifik sesuai kebutuhan Anda."
+      ]
+    },
+    {
+      "tag": "Komplikasi Diabetes",
+      "patterns": [
+        "Apa komplikasi yang dapat terjadi akibat diabetes?",
+        "Apa yang bisa terjadi jika diabetes tidak dikontrol?",
+        "Akibat dari diabetes",
+        "Apa akibat dari diabetes?"
+      ],
+      "responses": [
+        "Komplikasi diabetes yang mungkin terjadi termasuk kerusakan pada saraf (neuropati), kerusakan pada ginjal (nefropati), masalah mata (retinopati), penyakit jantung dan pembuluh darah, masalah kulit, dan luka yang sulit sembuh. Jika diabetes tidak dikontrol dengan baik, ini dapat menyebabkan masalah kesehatan jangka panjang. Penting untuk memantau dan mengelola diabetes secara teratur."
+      ]
+    },
+    {
+      "tag": "Diet Diabetes",
+      "patterns": [
+        "Apa yang boleh dimakan oleh penderita diabetes?",
+        "Bagaimana diet diabetes yang sehat?"
+      ],
+      "responses": [
+        "Dalam diet diabetes yang sehat, disarankan untuk mengonsumsi makanan rendah gula dan karbohidrat kompleks, seperti sayuran, buah-buahan segar, biji-bijian, protein tanpa lemak, dan produk susu rendah lemak. Hindari atau batasi makanan tinggi gula, makanan olahan, makanan berlemak tinggi, dan minuman beralkohol. Pastikan untuk berkonsultasi dengan ahli gizi untuk mendapatkan rencana diet yang sesuai dengan kebutuhan Anda."
+      ]
+    },
+    {
+      "tag": "Pemeriksaan Kesehatan",
+      "patterns": [
+        "Mengapa penting melakukan pemeriksaan kesehatan secara teratur?",
+        "Kenapa penting melakukan pemeriksaan kesehatan secara teratur?",
+        "Mengapa penting melakukan pemeriksaan kesehatan?",
+        "Kenapa penting melakukan pemeriksaan diabetes?"
+      ],
+      "responses": [
+        "Gejala diabetes tipe 2 mungkin begitu ringan sehingga mungkin terabaikan selama bertahun-tahun, dan karena itu tetap tidak diobati. Hal ini dapat menyebabkan komplikasi. Kita tidak bisa selalu bergantung pada gejala, untuk itu satu-satunya cara untuk mengetahui apakah seseorang memiliki diabetes harus melakukan skrining (tes).  Skrining untuk diabetes dilakukan di failitas kesehatan, tempat praktek dokter, klinik atau laboratorium. Penyedia layanan kesehatan dapat melakukan satu atau beberapa tes darah untuk mencari diabetes. individu yang berisiko tinggi harus diskrining untuk diabetes secara berkala, dimulai pada usia 35 tahun."
+      ]
+    },
+    {
+      "tag": "Pengobatan Diabetes",
+      "patterns": [
+        "Pengobatan diabetes?",
+        "Apa saja jenis pengobatan diabetes?",
+        "Bagaimana pengobatan diabetes?",
+        "Jenis pengobatan diabetes?",
+        "obat diabetes?"
+      ],
+      "responses": [
+        "Tujuan pengobatan adalah untuk menjaga tingkat gula darah agar sebaik mungkin mendekati normal. Jenis makanan dan tingkat aktivitas fisik memainkan peran penting dalam mengendalikan gula darah, seperti halnya obat-obatan. Berbagai obat-obatan dapat digunakan untuk mengobati diabetes. Obat-obatan untuk diabetes harus diresepkan hanya oleh penyedia layanan kesehatan. Namun, penting bagi orang dengan diabetes untuk memahami bagaimana obat bekerja. Selain mengambil obat-obatan melalui mulut, obat injeksi juga dapat digunakan. Insulin saat ini tidak tersedia dalam bentuk pil, dan karena itu harus disuntikkan. Ada juga obat-obat non-insulin yang disuntikkan. Ada banyak perangkat pengiriman insulin suntik, seperti jarum, jarum suntik dan pompa insulin. Insulin adalah wajib bagi orang- orang dengan diabetes tipe 1. Diabetes tipe 2 biasanya diobati dengan obat- obatan oral tapi suntikan insulin dapat diberikan jika obat-obatan oral tidak memadai untuk mengontrol tingkat gula darah. Pengobatan tergantung pada jenis diabetes, komplikasi, adanya faktor risiko lain, dengan masalah kesehatan lainnya yang aktif, usia dan kesehatan secara umum pada saat diagnosis. Penyedia perawatan kesehatan akan menentukan obat yang bekerja terbaik bagi masing-masing pasien. Keuntungan dan kerugian dari masing-masing obat ini dapat dijelaskan oleh penyedia layanan kesehatan. Untuk pengobatan untuk menjadi sukses, pasien harus hati-hati mengelola diet, aktif secara fisik, minum obat oral dan / atau insulin, dan diinformasikan dengan baik tentang penyakit ini."
+      ]
+    },
+    {
+      "tag": "Sumber Informasi",
+      "patterns": [
+        "Bisakah Anda memberikan sumber informasi tambahan tentang diabetes?",
+        "Di mana saya bisa mencari informasi lebih lanjut tentang diabetes?"
+      ],
+      "responses": [
+        "Tentu! Beberapa sumber informasi yang terpercaya tentang diabetes adalah Asosiasi Diabetes Amerika (American Diabetes Association) di situs web mereka di diabetes.org, Organisasi Kesehatan Dunia (World Health Organization) di who.int, dan Klinik Mayo (Mayo Clinic) di mayoclinic.org. Anda juga dapat menghubungi dokter atau tenaga medis terkait untuk informasi lebih lanjut."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "goodbye",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you"
+      ],
+      "responses": [
+        "Bye!",
+        "Dadahh!",
+        "Good bye!",
+        "Dahh, semoga harimu menyenangkan yaa!",
+        "Sampai jumpa lagi!",
+        "See u! Senang bisa membantu"
+      ]
+    },
+    {
+      "tag": "Terima Kasih",
+      "patterns": ["Terima kasih", "Makasih", "Sangat membantu, terima kasih!"],
+      "responses": [
+        "Sama-sama! Jika Anda memiliki pertanyaan lain tentang diabetes, jangan ragu untuk bertanya."
+      ]
+    }
+  ]
+}

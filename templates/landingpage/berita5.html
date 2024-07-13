@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desa Sukojaya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/Logos.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/landingpage.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      table,
+      th,
+      td {
+        border: 5px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="adminActions">
+      <input type="checkbox" name="adminToggle" class="adminToggle" />
+      <a class="adminButton" href="/chatbot"
+        ><i class="fa-brands fa-rocketchat"></i
+      ></a>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #327a6d"
+    >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="{{ url_for('static', filename='images/Logos.png') }}"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+            style="width: 180px"
+          />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 px-5 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" aria-current="page" href="/profile-desa"
+                >Profil Desa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="/peta-wilayah">Peta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="/tentang-chatbot"
+                >Tentang CabotDes</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+            <a
+              class="nav-link fs-6 text-light border rounded-circle px-3 bg-success border-success"
+              href="#"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li> -->
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <div class="container-fluid px-5" style="margin-top: 120px">
+      <nav aria-label="breadcrumb" style="background-color: #f8f8f8">
+        <ol class="breadcrumb py-2 px-4">
+          <li class="breadcrumb-item">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="breadcrumb-item"><a href="/home">Berita Terbaru</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Pembentukan Karang Taruna...
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container-fluid px-5 mt-5 mb-5">
+      <div class="row">
+        <h1 class="primary-color fw-bold fs-4">
+          Pembentukan Karang Taruna Desa <br />
+          Sukajaya
+        </h1>
+        <div style="color: #9a9a9a; font-size: 14px" class="row d-inline py-3">
+          <p class="d-inline">
+            <i class="fa-solid fa-calendar-days"></i> Mar 27, 2024
+          </p>
+          <p class="d-inline">
+            <i class="fa-solid fa-user"></i> Operator Website Sukaja
+          </p>
+        </div>
+
+        <img
+          class="img-fluid py-3"
+          style="border-radius: 10px"
+          src="{{ url_for('static', filename='images/news2.png') }}"
+          alt=""
+        />
+
+        <p class="" style="color: #9a9a9a">
+          Desa Sukajaya mengalami tonggak sejarah baru dengan pembentukan Karang
+          Taruna, sebuah organisasi pemuda yang bertujuan untuk menggerakkan
+          potensi generasi muda dalam memajukan desa.
+        </p>
+
+        <h5 style="color: #5b5b5b" class="fw-bold mt-2">
+          Pengumuman Pembentukan Karang Taruna
+        </h5>
+        <p class="" style="color: #9a9a9a">
+          Pemerintah Desa Sukajaya mengumumkan secara resmi pembentukan Karang
+          Taruna sebagai wadah bagi pemuda desa untuk berpartisipasi dalam
+          berbagai kegiatan pembangunan dan sosial.
+        </p>
+        <h5 style="color: #5b5b5b" class="fw-bold mt-2">
+          Tujuan dan Visi Karang Taruna
+        </h5>
+        <p class="" style="color: #9a9a9a">
+          Karang Taruna Desa Sukajaya memiliki tujuan mulia untuk mengembangkan
+          potensi pemuda dalam berbagai bidang seperti sosial, ekonomi, budaya,
+          dan lingkungan. Mereka bertekad menjadi agen perubahan yang positif
+          dalam memajukan desa mereka.
+        </p>
+        <h5 style="color: #5b5b5b" class="fw-bold mt-2">Struktur Organisasi</h5>
+        <p class="" style="color: #9a9a9a">
+          Struktur organisasi Karang Taruna telah ditetapkan, dengan ketua,
+          sekretaris, bendahara, dan anggota yang dipilih melalui musyawarah dan
+          pemilihan. Setiap anggota diharapkan berkontribusi aktif dalam
+          menjalankan program-program yang telah direncanakan.
+        </p>
+        <h5 style="color: #5b5b5b" class="fw-bold mt-2">
+          Program-program Unggulan
+        </h5>
+        <p class="" style="color: #9a9a9a">
+          Karang Taruna Desa Sukajaya telah merencanakan sejumlah
+          program-program unggulan, termasuk pelatihan keterampilan bagi pemuda,
+          kegiatan sosial dan kebersihan lingkungan, serta pengembangan potensi
+          ekonomi masyarakat muda.
+        </p>
+        <h5 style="color: #5b5b5b" class="fw-bold mt-2">
+          Dukungan Pemerintah Desa dan Masyarakat
+        </h5>
+        <p class="" style="color: #9a9a9a">
+          Pembentukan Karang Taruna mendapat dukungan penuh dari pemerintah desa
+          dan masyarakat setempat. Mereka menyambut baik inisiatif ini sebagai
+          langkah positif dalam memperkuat peran pemuda dalam pembangunan desa.
+        </p>
+
+        <p class="" style="color: #9a9a9a">
+          Pembentukan Karang Taruna Desa Sukajaya menjadi tonggak bersejarah
+          yang menandai komitmen pemuda dalam memajukan desa mereka. Dengan
+          dukungan penuh dari pemerintah desa dan masyarakat, diharapkan Karang
+          Taruna akan menjadi motor penggerak dalam menciptakan perubahan
+          positif dan kesejahteraan bagi seluruh warga Desa Sukajaya.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div style="background-color: #3c3c3c" class="container-fluid">
+        <div class="row">
+          <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle">
+              <img
+                src="{{ url_for('static', filename='images/LOGO DESA SUKAJAYA 2.png') }}"
+                alt=""
+                style="
+                  width: 80px;
+                  background-color: #fff;
+                  border-radius: 50px;
+                  padding: 10px;
+                  box-shadow: 10px 7px 15px 0 rgba(57, 56, 56, 0.1),
+                    0 1px 1px 0 rgba(0, 0, 0, 0.1);
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-5 mt-3">
+          <h1 class="text-light text-uppercase fs-4 fw-bold">
+            pemerintahan desa sukajaya
+          </h1>
+          <p class="text-light mt-4">
+            Jalan Desa Sukajaya, Dusun 1 RT 001 RW 001 <br />
+            Desa Sukajaya, Kecamatan Cimahi, Kabupaten Kuningan, <br />
+            Provinsi Jawa Barat, Indonesia, 45582.
+          </p>
+          <div class="row g-1 d-inline">
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-envelope"> </i> suakaja743@gmail.com</a
+            >
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-phone"> </i> 082297980002</a
+            >
+          </div>
+          <div class="py-2" style="border-bottom: dotted #fff"></div>
+        </div>
+      </div>
+
+      <div
+        style="background-color: #1e1e1e; padding: 20px"
+        class="container-fluid text-center"
+      >
+        <p style="color: #5b5b5b">
+          <span style="color: #f8a23d">Permerintah Desa Sukajaya.</span> All
+          Rights Reserved. Powered by
+          <span style="color: #f8a23d">No Name</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

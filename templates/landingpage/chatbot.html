@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desa Sukojaya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/Logos.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/landingpage.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/normalize.min.css"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      table,
+      th,
+      td {
+        border: 5px solid #fff;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="adminActions">
+      <input type="checkbox" name="adminToggle" class="adminToggle" />
+      <a class="adminButton" href="/chatbot"
+        ><i class="fa-brands fa-rocketchat"></i
+      ></a>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #327a6d"
+    >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/home">
+          <img
+            src="{{ url_for('static', filename='images/Logos.png') }}"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+            style="width: 180px"
+          />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 px-5 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" aria-current="page" href="/profile-desa"
+                >Profil Desa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="/peta-wilayah">Peta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-6" href="/tentang-chatbot"
+                >Tentang CabotDes</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+            <a
+              class="nav-link fs-6 text-light border rounded-circle px-3 bg-success border-success"
+              href="#"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li> -->
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <div class="container-fluid px-5" style="margin-top: 120px">
+      <nav aria-label="breadcrumb" style="background-color: #f8f8f8">
+        <ol class="breadcrumb py-2 px-4">
+          <li class="breadcrumb-item">
+            <a href="/home"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/chatbot">Tentang CabotDes</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">CabotDes</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container-fluid px-5 mt-4 mb-5">
+      <div class="row">
+        <h1 class="primary-color fw-bold fs-4">Tentang CabotDes</h1>
+
+        <div class="row text-center">
+          <h1 class="fs-3 fw-bolder" style="color: #5b5b5b">
+            Membantu Masyarakat secara instan <br />
+            dengan chatbot
+            <span class="primary-color">berbasis AI</span>
+          </h1>
+          <p class="fs-6 py-4" style="color: #5b5b5b; line-height: 1.8">
+            Chatbot dengan nama CABOTDES mampu memberikan informasi dan
+            memberikan jawaban <br />
+            cepat dan akurat yang dihasilkan AI atas pertanyaan masyarakat Desa
+            Sukajaya
+          </p>
+        </div>
+
+        <h5 style="color: #5b5b5b" class="fs-4 fw-bolder mt-2 text-center">
+          CABOTDES
+        </h5>
+        <div class="px-4 py-4">
+          <div class="row used mb-3">
+            <div class="col-lg-4 text-center mt-5 mb-3">
+              <h3
+                class="text-dark fs-4 text-center mt-5"
+                style="font-weight: 900"
+              >
+                CARA PENGGUNAAN <br /><span class="primary-color"
+                  >CHATBOTDES</span
+                >
+              </h3>
+              <img
+                src="{{ url_for('static', filename='images/hero-bot.png') }}"
+                alt=""
+                style="width: 350px"
+              />
+            </div>
+            <div class="col-lg-7 mt-5 mb-3">
+              <div class="card mb-3 mt-5 used-card" style="max-width: 750px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="{{ url_for('static', filename='images/used-1.png') }}"
+                      class="img-fluid rounded-start p-2"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark fw-bolder">
+                        Masuk Halaman Website
+                      </h5>
+                      <p class="card-text text-dark fw-semibold">
+                        Pertama, akses website CHATBOTDES dengan menekan tombol
+                        <span class="primary-color">"Masuk Website"</span> dan
+                        Setelah berhasil masuk, Kamu akan diarahkan ke halaman
+                        utama website Desa Sukajaya
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 mt-5 used-card" style="max-width: 750px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="{{ url_for('static', filename='images/used-2.png') }}"
+                      class="img-fluid rounded-start p-2"
+                      alt="..."
+                      width="185"
+                      height="171"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark fw-bolder">
+                        Akses Chatbot
+                      </h5>
+                      <p class="card-text text-dark fw-semibold">
+                        Di halaman utama website Desa Sukajaya, cari icon
+                        chatbot yang terletak di bagian kanan layar. Kemudian
+                        Klik icon chatbot tersebut untuk membuka jendela atau
+                        panel chatbot
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 mt-5 used-card" style="max-width: 750px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="{{ url_for('static', filename='images/used-3.png') }}"
+                      class="img-fluid rounded-start p-2"
+                      alt="..."
+                      width="185"
+                      height="171"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark fw-bolder">
+                        Tanyakan Pertanyaan
+                      </h5>
+                      <p class="card-text text-dark fw-semibold">
+                        Setelah berhasil membuka chatbot, Kamu dapat mulai
+                        bertanya terkait informasi Desa Sukajaya. Lalu, Kamu
+                        bisa mulai dengan mengetik pertanyaan yang Kamu Butuhkan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 mt-5 used-card" style="max-width: 750px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="{{ url_for('static', filename='images/used-4.png') }}"
+                      class="img-fluid rounded-start p-2"
+                      alt="..."
+                      width="185"
+                      height="171"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark fw-bolder">
+                        Dapatkan Informasi
+                      </h5>
+                      <p class="card-text text-dark fw-semibold">
+                        Chatbot akan memberikan respons atas pertanyaan Kamu
+                        dengan informasi yang relevan. serta dapat terus
+                        berinteraksi dengan Chatbot untuk mendapatkan lebih
+                        banyak informasi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-2 py-5">
+        <div class="col-lg-8">
+          <h4 class="primary-color fw-bolder py-4 mt-5">Apa itu CABOTDES ?</h4>
+          <p style="color: #5b5b5b" class="fw-bold">
+            CABOTDES adalah upaya kami untuk membawa informasi tentang Desa
+            Sukajaya ke tataran baru dengan teknologi
+            <span class="primary-color">CHATBOT</span> yang inovatif. Kami
+            berkomitmen untuk memberikan akses mudah dan cepat ke informasi yang
+            berguna bagi warga desa, pengunjung, dan siapa pun yang ingin
+            mengetahui lebih banyak tentang kehidupan di Desa Sukajaya secara
+            langsung melalui obrolan atau chatting
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="{{ url_for('static', filename='images/hero-bot2.png') }}"
+            class="img-fluid rounded-start"
+            alt="..."
+            width="300"
+          />
+        </div>
+      </div>
+
+      <div class="row used mb-3">
+        <h4 class="text-center primary-color fs-3 fw-bold mt-5 mb-5">
+          FITUR CABOTDES
+        </h4>
+        <div class="container d-flex justify-content-center mb-5">
+          <div class="row px-5 mb-5 g-5">
+            <div style="margin-right: 120px" class="col-lg-5 px-5 g-5">
+              <div class="card px-3 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >mindfulness</span
+                  >
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Chatbot Pintar
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Dapatkan jawaban atas pertanyaan Kamu segera melalui obrolan
+                    dengan chatbot. Apakah Kamu mencari informasi apapun.
+                    chatbot kami siap memberikan jawaban yang tepat.
+                  </p>
+                </div>
+              </div>
+              <div class="card px-3 mt-5 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >newspaper</span
+                  >
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Informasi Umum Desa
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Temukan berbagai informasi tentang Desa Sukajaya, mulai dari
+                    sejarah dan budaya lokal hingga profil tokoh masyarakat dan
+                    kegiatan komunitas.
+                  </p>
+                </div>
+              </div>
+              <div class="card px-3 mt-5 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >approval_delegation</span
+                  >
+
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Layanan Informasi
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    CABOTDES juga menyediakan informasi tentang layanan publik
+                    yang tersedia di desa, seperti kantor pemerintahan,
+                    fasilitas kesehatan dan pendidikan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 px-5">
+              <div class="card px-3 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >center_focus_strong</span
+                  >
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Fitur Pencarian
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Temukan informasi dengan cepat menggunakan fitur pencarian
+                    yang efisien. Ketikkan kata kunci dan chatbot kami akan
+                    memberikan hasil yang relevan segera.
+                  </p>
+                </div>
+              </div>
+              <div class="card px-3 mt-5 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >captive_portal</span
+                  >
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Kemudahan Akses
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Tidak perlu lagi menjelajahi berbagai situs web atau
+                    menghubungi pihak terkait. Dengan CABOTDES, semua informasi
+                    yang Kamu butuhkan ada di ujung jari Kamu, siap untuk
+                    diakses kapan saja, di mana saja.
+                  </p>
+                </div>
+              </div>
+              <div class="card px-3 mt-5 fitur" style="width: 410px">
+                <div class="d-inline py-3">
+                  <span
+                    class="material-symbols-outlined primary-color py-5 px-3 mt-5 d-inline align-middle"
+                    >interactive_space</span
+                  >
+
+                  <!-- Tulisan -->
+                  <p class="text-center fw-bold ml-5 d-inline align-middle">
+                    Pertanyaan Umum Otomatis
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    CABOTDES ini telah diprogram untuk secara otomatis merespons
+                    pertanyaan, sehingga Kamu akan mendapatkan informasi yang
+                    Kamu butuhkan secara langsung, tanpa menunggu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <h3 style="color: #1e1e1e" class="fw-bold text-center mb-5">
+            Contoh Pertanyaan
+          </h3>
+
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body">
+                <p class="card-text text-dark fw-semibold">
+                  Bagaimana Pembuatan Kartu Tanda Penduduk dan Apa Syarat Yang
+                  Harus Saya Siapkan?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body mt-2">
+                <p class="card-text text-dark fw-semibold">
+                  Berapa Banyak Masyarkat Desa Sukajaya Pada Tahun 2024?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body mt-3">
+                <p class="card-text text-dark fw-semibold">
+                  Siapa Nama Kepala Desa Sukajaya Saat ini?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center py-5">
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body text-center mt-3">
+                <p class="card-text text-dark fw-semibold">
+                  Siapa Nama RT 001 Desa Sukajaya?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body text-center mt-3">
+                <p class="card-text text-dark fw-semibold">
+                  Berapa Luas Wilayah Desa Sukajaya?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body mt-3">
+                <p class="card-text text-dark fw-semibold">
+                  Kapan Jadwal Posyandu?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body mt-2">
+                <p class="card-text text-dark fw-semibold">
+                  Ada berapa Perangkat desa yang aktif saat ini di Desa
+                  Sukajaya?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="card-body mt-2">
+                <p class="card-text text-dark fw-semibold">
+                  Fasilitas apa saja yang ada di Desa Sukajaya?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div style="background-color: #3c3c3c" class="container-fluid">
+        <div class="row">
+          <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle">
+              <img
+                src="{{ url_for('static', filename='images/LOGO DESA SUKAJAYA 2.png') }}"
+                alt=""
+                style="
+                  width: 80px;
+                  background-color: #fff;
+                  border-radius: 50px;
+                  padding: 10px;
+                  box-shadow: 10px 7px 15px 0 rgba(57, 56, 56, 0.1),
+                    0 1px 1px 0 rgba(0, 0, 0, 0.1);
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-5 mt-3">
+          <h1 class="text-light text-uppercase fs-4 fw-bold">
+            pemerintahan desa sukajaya
+          </h1>
+          <p class="text-light mt-4">
+            Jalan Desa Sukajaya, Dusun 1 RT 001 RW 001 <br />
+            Desa Sukajaya, Kecamatan Cimahi, Kabupaten Kuningan, <br />
+            Provinsi Jawa Barat, Indonesia, 45582.
+          </p>
+          <div class="row g-1 d-inline">
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-envelope"> </i> suakaja743@gmail.com</a
+            >
+            <a class="text-light" style="text-decoration: none"
+              ><i class="fa-solid fa-phone"> </i> 082297980002</a
+            >
+          </div>
+          <div class="py-2" style="border-bottom: dotted #fff"></div>
+        </div>
+      </div>
+
+      <div
+        style="background-color: #1e1e1e; padding: 20px"
+        class="container-fluid text-center"
+      >
+        <p style="color: #5b5b5b">
+          <span style="color: #f8a23d">Permerintah Desa Sukajaya.</span> All
+          Rights Reserved. Powered by
+          <span style="color: #f8a23d">No Name</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
